@@ -1,23 +1,24 @@
-technologies = {
-	world_tension_increase_production_research = {
+# 世界紧张度相关技术已被注释 - 不合理的设定
+# technologies = {
+	# world_tension_increase_production_research = {
 		
-		enable_equipments = {
-			world_tension_increase_in_warehouse
-			world_tension_increase_in_warehouse_product
-		}
+		# enable_equipments = {
+			# world_tension_increase_in_warehouse
+			# world_tension_increase_in_warehouse_product
+		# }
 		
-		research_cost = -1
-		ai_will_do = { factor = 0 } 
-	}
+		# research_cost = -1
+		# ai_will_do = { factor = 0 } 
+	# }
 	
-	world_tension_decrease_production_research = {
+	# world_tension_decrease_production_research = {
 
-		enable_equipments = {
-			world_tension_decrease_in_warehouse
-			world_tension_decrease_in_warehouse_product
-		}
+		# enable_equipments = {
+			# world_tension_decrease_in_warehouse
+			# world_tension_decrease_in_warehouse_product
+		# }
 		
-		research_cost = -1
-		ai_will_do = { factor = 0 } 
-	}
-}
+		# research_cost = -1
+		# ai_will_do = { factor = 0 } 
+	# }
+# }
