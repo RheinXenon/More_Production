@@ -1,0 +1,10 @@
+version="0.1"
+tags={
+	"Technologies"
+	"Military"
+	"Gameplay"
+	"Fixes"
+}
+name="More_Production"
+supported_version="1.16.2"
+remote_file_id="3378477376"
