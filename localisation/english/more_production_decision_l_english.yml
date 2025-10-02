@@ -134,9 +134,18 @@
   autonomy_research_3_decision: "Advanced Autonomy Research  |  §R100,000 research points§!"
   autonomy_research_3_decision_trigger_tt: "Requires §R100,000 research points§! Currently: §Y[?research_point_var]§!"
 
-  # Research Slot Decisions
-  research_slot_decision: "Research Slot Production  |  §R100,000 research points§!"
-  research_slot_decision_trigger_tt: "Requires §R100,000 research points§! Currently: §Y[?research_point_var]§!"
+  # Research Slot Decisions - Modified to 4 separate research slots
+  research_slot_1_decision: "Research Slot Production I  |  §R100,000 research points§!"
+  research_slot_1_decision_trigger_tt: "Requires §R100,000 research points§! Currently: §Y[?research_point_var]§!"
+  
+  research_slot_2_decision: "Research Slot Production II  |  §R200,000 research points§!"
+  research_slot_2_decision_trigger_tt: "Requires §R200,000 research points§! Currently: §Y[?research_point_var]§!"
+  
+  research_slot_3_decision: "Research Slot Production III  |  §R400,000 research points§!"
+  research_slot_3_decision_trigger_tt: "Requires §R400,000 research points§! Currently: §Y[?research_point_var]§!"
+  
+  research_slot_4_decision: "Research Slot Production IV  |  §R800,000 research points§!"
+  research_slot_4_decision_trigger_tt: "Requires §R800,000 research points§! Currently: §Y[?research_point_var]§!"
 
   # Research Speed Decisions
   research_speed_decision: "Convert §Gresearch points§! into §Yresearch speed§!"

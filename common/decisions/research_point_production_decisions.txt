@@ -84,22 +84,27 @@ more_production_decision = {
 		}
 	}
 
-	research_slot_decision = {
+	# 科研槽决策 - 修改为最多4个，分别消耗100000、200000、400000、800000科研点
+
+	research_slot_1_decision = {
 		icon = GFX_research_icon
 		cost = 0
         priority = 114514191981
-		fire_only_once = no 
+		fire_only_once = yes 
 
 		visible = {
 			OR = {
 				has_tech = research_point_production_3_research
 				has_country_flag = cheat_mode
 			}
+			NOT = {
+				has_country_flag = research_slot_1_unlocked
+			}
 		}
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = research_slot_decision_trigger_tt
+				tooltip = research_slot_1_decision_trigger_tt
 				OR = {
 					has_country_flag = cheat_mode
 					check_variable = {
@@ -120,6 +125,127 @@ more_production_decision = {
 				}
 			}
 			add_research_slot = 1
+			set_country_flag = research_slot_1_unlocked
+		}
+	}
+
+	research_slot_2_decision = {
+		icon = GFX_research_icon
+		cost = 0
+        priority = 114514191980
+		fire_only_once = yes 
+
+		visible = {
+			has_country_flag = research_slot_1_unlocked
+			NOT = {
+				has_country_flag = research_slot_2_unlocked
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = research_slot_2_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 199999
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -200000
+				}
+			}
+			add_research_slot = 1
+			set_country_flag = research_slot_2_unlocked
+		}
+	}
+
+	research_slot_3_decision = {
+		icon = GFX_research_icon
+		cost = 0
+        priority = 114514191979
+		fire_only_once = yes 
+
+		visible = {
+			has_country_flag = research_slot_2_unlocked
+			NOT = {
+				has_country_flag = research_slot_3_unlocked
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = research_slot_3_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 399999
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -400000
+				}
+			}
+			add_research_slot = 1
+			set_country_flag = research_slot_3_unlocked
+		}
+	}
+
+	research_slot_4_decision = {
+		icon = GFX_research_icon
+		cost = 0
+        priority = 114514191978
+		fire_only_once = yes 
+
+		visible = {
+			has_country_flag = research_slot_3_unlocked
+			NOT = {
+				has_country_flag = research_slot_4_unlocked
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = research_slot_4_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 799999
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -800000
+				}
+			}
+			add_research_slot = 1
+			set_country_flag = research_slot_4_unlocked
 		}
 	}
 

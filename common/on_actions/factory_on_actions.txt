@@ -507,195 +507,195 @@ on_actions = {
 	}
 
 
-	# factory and naval ouput production 
+	# factory and naval ouput production - 已注释，因为工厂产出提升效果过强
 
-	on_weekly = { 
-		
-		effect = {
-			if = {
-				limit = {
-					
-					check_variable = {
-						var:num_equipment@factory_output_in_warehouse_product > 0
-					}
-				}
-				
-				set_variable = {
-					var = factory_output_product	
-					value = var:num_equipment@factory_output_in_warehouse_product
-				}
-				set_variable = {
-					var = factory_output_product_negative
-					value = var:num_equipment@factory_output_in_warehouse_product
-				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@factory_output_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = factory_output_product_negative
-						value = -1
-					}
-				}
-				
-				
-				########################################################
+	# on_weekly = { 
+		# 
+		# effect = {
+			# if = {
+				# limit = {
+					# 
+					# check_variable = {
+						# var:num_equipment@factory_output_in_warehouse_product > 0
+					# }
+				# }
+				# 
+				# set_variable = {
+					# var = factory_output_product	
+					# value = var:num_equipment@factory_output_in_warehouse_product
+				# }
+				# set_variable = {
+					# var = factory_output_product_negative
+					# value = var:num_equipment@factory_output_in_warehouse_product
+				# }
+				# if = {
+					# limit = {
+						# check_variable = {
+							# var:num_equipment@factory_output_in_warehouse_product > 0
+						# }
+					# }
+					# multiply_variable = {
+						# var = factory_output_product_negative
+						# value = -1
+					# }
+				# }
+				# 
+				# 
+				# ########################################################
 
-				add_equipment_to_stockpile = {
-    				type = factory_output_in_warehouse_product
-    				amount = factory_output_product_negative
-    				# producer = ROOT
-				}
+				# add_equipment_to_stockpile = {
+    				# type = factory_output_in_warehouse_product
+    				# amount = factory_output_product_negative
+    				# # producer = ROOT
+				# }
 
-				divide_variable = {
-					var = factory_output_product
-					value = 100
-				}
+				# divide_variable = {
+					# var = factory_output_product
+					# value = 100
+				# }
 
-				add_to_variable = {
-					more_production_industrial_capacity_factory = factory_output_product
-				}
-				add_to_variable = {
-					more_production_industrial_capacity_dockyard = factory_output_product
-				}
+				# add_to_variable = {
+					# more_production_industrial_capacity_factory = factory_output_product
+				# }
+				# add_to_variable = {
+					# more_production_industrial_capacity_dockyard = factory_output_product
+				# }
 
-				set_variable = {
-					var = factory_output_product
-					value = 0
-				}
-				set_variable = {
-					var = factory_output_product_negative
-					value = 0
-				}
-			}
-		}
-	}
+				# set_variable = {
+					# var = factory_output_product
+					# value = 0
+				# }
+				# set_variable = {
+					# var = factory_output_product_negative
+					# value = 0
+				# }
+			# }
+		# }
+	# }
 
-    on_weekly = { 
-		
-		effect = {
-			if = {
-				limit = {
-					
-					check_variable = {
-						var:num_equipment@factory_output_in_warehouse_product_2 > 0
-					}
-				}
-				
-				set_variable = {
-					var = factory_output_product_2
-					value = var:num_equipment@factory_output_in_warehouse_product_2
-				}
-				set_variable = {
-					var = factory_output_product_2_negative
-					value = var:num_equipment@factory_output_in_warehouse_product_2
-				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@factory_output_in_warehouse_product_2 > 0
-						}
-					}
-					multiply_variable = {
-						var = factory_output_product_2_negative
-						value = -1
-					}
-				}
-				
-				
-				########################################################
+    # on_weekly = { 
+		# 
+		# effect = {
+			# if = {
+				# limit = {
+					# 
+					# check_variable = {
+						# var:num_equipment@factory_output_in_warehouse_product_2 > 0
+					# }
+				# }
+				# 
+				# set_variable = {
+					# var = factory_output_product_2
+					# value = var:num_equipment@factory_output_in_warehouse_product_2
+				# }
+				# set_variable = {
+					# var = factory_output_product_2_negative
+					# value = var:num_equipment@factory_output_in_warehouse_product_2
+				# }
+				# if = {
+					# limit = {
+						# check_variable = {
+							# var:num_equipment@factory_output_in_warehouse_product_2 > 0
+						# }
+					# }
+					# multiply_variable = {
+						# var = factory_output_product_2_negative
+						# value = -1
+					# }
+				# }
+				# 
+				# 
+				# ########################################################
 
-				add_equipment_to_stockpile = {
-    				type = factory_output_in_warehouse_product_2
-    				amount = factory_output_product_2_negative
-    				# producer = ROOT
-				}
-				divide_variable = {
-					var = factory_output_product_2
-					value = 100
-				}
+				# add_equipment_to_stockpile = {
+    				# type = factory_output_in_warehouse_product_2
+    				# amount = factory_output_product_2_negative
+    				# # producer = ROOT
+				# }
+				# divide_variable = {
+					# var = factory_output_product_2
+					# value = 100
+				# }
 
-				add_to_variable = {
-					more_production_industrial_capacity_factory = factory_output_product_2
-				}
-				add_to_variable = {
-					more_production_industrial_capacity_dockyard = factory_output_product_2
-				}
-				set_variable = {
-					var = factory_output_product_2
-					value = 0
-				}
-				set_variable = {
-					var = factory_output_product_2_negative
-					value = 0
-				}
-			}
-		}
-	}
+				# add_to_variable = {
+					# more_production_industrial_capacity_factory = factory_output_product_2
+				# }
+				# add_to_variable = {
+					# more_production_industrial_capacity_dockyard = factory_output_product_2
+				# }
+				# set_variable = {
+					# var = factory_output_product_2
+					# value = 0
+				# }
+				# set_variable = {
+					# var = factory_output_product_2_negative
+					# value = 0
+				# }
+			# }
+		# }
+	# }
 
 
-	on_weekly = { 
-		
-		effect = {
-			if = {
-				limit = {
-					
-					check_variable = {
-						var:num_equipment@factory_output_in_warehouse_product_3 > 0
-					}
-				}
-				
-				set_variable = {
-					var = factory_output_product_3
-					value = var:num_equipment@factory_output_in_warehouse_product_3
-				}
-				set_variable = {
-					var = factory_output_product_3_negative
-					value = var:num_equipment@factory_output_in_warehouse_product_3
-				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@factory_output_in_warehouse_product_3 > 0
-						}
-					}
-					multiply_variable = {
-						var = factory_output_product_3_negative
-						value = -1
-					}
-				}
-				
-				
-				########################################################
+	# on_weekly = { 
+		# 
+		# effect = {
+			# if = {
+				# limit = {
+					# 
+					# check_variable = {
+						# var:num_equipment@factory_output_in_warehouse_product_3 > 0
+					# }
+				# }
+				# 
+				# set_variable = {
+					# var = factory_output_product_3
+					# value = var:num_equipment@factory_output_in_warehouse_product_3
+				# }
+				# set_variable = {
+					# var = factory_output_product_3_negative
+					# value = var:num_equipment@factory_output_in_warehouse_product_3
+				# }
+				# if = {
+					# limit = {
+						# check_variable = {
+							# var:num_equipment@factory_output_in_warehouse_product_3 > 0
+						# }
+					# }
+					# multiply_variable = {
+						# var = factory_output_product_3_negative
+						# value = -1
+					# }
+				# }
+				# 
+				# 
+				# ########################################################
 
-				add_equipment_to_stockpile = {
-    				type = factory_output_in_warehouse_product_3
-    				amount = factory_output_product_3_negative
-    				# producer = ROOT
-				}
-				divide_variable = {
-					var = factory_output_product_3
-					value = 100
-				}
+				# add_equipment_to_stockpile = {
+    				# type = factory_output_in_warehouse_product_3
+    				# amount = factory_output_product_3_negative
+    				# # producer = ROOT
+				# }
+				# divide_variable = {
+					# var = factory_output_product_3
+					# value = 100
+				# }
 
-				add_to_variable = {
-					more_production_industrial_capacity_factory = factory_output_product_3
-				}
-				add_to_variable = {
-					more_production_industrial_capacity_dockyard = factory_output_product_3
-				}
-				set_variable = {
-					var = factory_output_product_3
-					value = 0
-				}
-				set_variable = {
-					var = factory_output_product_3_negative
-					value = 0
-				}
-			}
-		}
-	}
+				# add_to_variable = {
+					# more_production_industrial_capacity_factory = factory_output_product_3
+				# }
+				# add_to_variable = {
+					# more_production_industrial_capacity_dockyard = factory_output_product_3
+				# }
+				# set_variable = {
+					# var = factory_output_product_3
+					# value = 0
+				# }
+				# set_variable = {
+					# var = factory_output_product_3_negative
+					# value = 0
+				# }
+			# }
+		# }
+	# }
 
 }

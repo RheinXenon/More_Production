@@ -142,51 +142,51 @@ equipments = {
 		priority = 30
 	}
 
-	# Factory Output Equipment Definition
+	# Factory Output Equipment Definition - 已注释，因为工厂产出提升效果过强
 
-	factory_output_in_warehouse = {
-		year = 1936
+	# factory_output_in_warehouse = {
+		# year = 1936
 
-		is_archetype = yes
-		
-		picture = archetype_factory_output
-		is_buildable = no
+		# is_archetype = yes
+		# 
+		# picture = archetype_factory_output
+		# is_buildable = no
 
-		type = infantry  # Using infantry type as a placeholder
-		group_by = archetype
-		
-		interface_category = interface_category_land
-		
-		active = yes
+		# type = infantry  # Using infantry type as a placeholder
+		# group_by = archetype
+		# 
+		# interface_category = interface_category_land
+		# 
+		# active = yes
 
-		lend_lease_cost = 2
-		
-		build_cost_ic = 1000
-		resources = {
-		
-		}
-	}
+		# lend_lease_cost = 2
+		# 
+		# build_cost_ic = 1000
+		# resources = {
+		# 
+		# }
+	# }
 
-	factory_output_in_warehouse_product = {
-		year = 1936
-		archetype = factory_output_in_warehouse
-		priority = 10	
-	}
+	# factory_output_in_warehouse_product = {
+		# year = 1936
+		# archetype = factory_output_in_warehouse
+		# priority = 10	
+	# }
 
-	factory_output_in_warehouse_product_2 = {
-		year = 1938
-		archetype = factory_output_in_warehouse
-		parent = factory_output_in_warehouse_product
-		build_cost_ic = 500
-		priority = 20
-	}
+	# factory_output_in_warehouse_product_2 = {
+		# year = 1938
+		# archetype = factory_output_in_warehouse
+		# parent = factory_output_in_warehouse_product
+		# build_cost_ic = 500
+		# priority = 20
+	# }
 
-	factory_output_in_warehouse_product_3 = {
-		year = 1941
-		archetype = factory_output_in_warehouse
-		parent = factory_output_in_warehouse_product_2
-		build_cost_ic = 100
-		priority = 30
-	}
+	# factory_output_in_warehouse_product_3 = {
+		# year = 1941
+		# archetype = factory_output_in_warehouse
+		# parent = factory_output_in_warehouse_product_2
+		# build_cost_ic = 100
+		# priority = 30
+	# }
 
 }

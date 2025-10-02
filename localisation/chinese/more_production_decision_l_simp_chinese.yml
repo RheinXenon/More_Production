@@ -135,9 +135,18 @@
   autonomy_research_3_decision_trigger_tt: "需要§R100,000科研点§!，当前为：§Y[?research_point_var]§!"
 
 
-  # research slot decisions
-  research_slot_decision: "科研槽生产  |  §R100,000科研点§!"
-  research_slot_decision_trigger_tt: "需要§R100,000科研点§!，当前为：§Y[?research_point_var]§!"
+  # research slot decisions - 修改为4个独立的科研槽
+  research_slot_1_decision: "科研槽生产 I  |  §R100,000科研点§!"
+  research_slot_1_decision_trigger_tt: "需要§R100,000科研点§!，当前为：§Y[?research_point_var]§!"
+  
+  research_slot_2_decision: "科研槽生产 II  |  §R200,000科研点§!"
+  research_slot_2_decision_trigger_tt: "需要§R200,000科研点§!，当前为：§Y[?research_point_var]§!"
+  
+  research_slot_3_decision: "科研槽生产 III  |  §R400,000科研点§!"
+  research_slot_3_decision_trigger_tt: "需要§R400,000科研点§!，当前为：§Y[?research_point_var]§!"
+  
+  research_slot_4_decision: "科研槽生产 IV  |  §R800,000科研点§!"
+  research_slot_4_decision_trigger_tt: "需要§R800,000科研点§!，当前为：§Y[?research_point_var]§!"
 
   # research speed decisions
   research_speed_decision: "将§G科研点§!转换为§Y科研速度§!"

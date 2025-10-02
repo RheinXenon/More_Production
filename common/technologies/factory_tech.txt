@@ -95,37 +95,37 @@ technologies = {
 		ai_will_do = { factor = 0 } 
 	}
 
-	# Factory Output Technologies
+	# Factory Output Technologies - 已注释，因为工厂产出提升效果过强
 
-	factory_output_production_research = {
-		
-		enable_equipments = {
-			factory_output_in_warehouse
-			factory_output_in_warehouse_product
-		}
-		
-		research_cost = -1
-		ai_will_do = { factor = 0 } 
-	}
+	# factory_output_production_research = {
+		# 
+		# enable_equipments = {
+			# factory_output_in_warehouse
+			# factory_output_in_warehouse_product
+		# }
+		# 
+		# research_cost = -1
+		# ai_will_do = { factor = 0 } 
+	# }
 
-	factory_output_production_2_research = {
+	# factory_output_production_2_research = {
 
-		enable_equipments = {
-			factory_output_in_warehouse_product_2
-		}
-		
-		research_cost = -1
-		ai_will_do = { factor = 0 } 
-	}
+		# enable_equipments = {
+			# factory_output_in_warehouse_product_2
+		# }
+		# 
+		# research_cost = -1
+		# ai_will_do = { factor = 0 } 
+	# }
 
-	factory_output_production_3_research = {
-		
-		enable_equipments = {
-			factory_output_in_warehouse_product_3
-		}
+	# factory_output_production_3_research = {
+		# 
+		# enable_equipments = {
+			# factory_output_in_warehouse_product_3
+		# }
 
-		research_cost = -1
-		ai_will_do = { factor = 0 } 
-	}
+		# research_cost = -1
+		# ai_will_do = { factor = 0 } 
+	# }
 
 }
