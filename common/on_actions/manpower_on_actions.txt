@@ -38,6 +38,10 @@ on_actions = {
     				amount = manpower_product_negative
     				# producer = ROOT
 				}
+				multiply_variable = {
+					var = manpower_product
+					value = 10
+				}
 				add_manpower = manpower_product
 				set_variable = {
 					var = manpower_product
@@ -89,6 +93,10 @@ on_actions = {
     				type = man_in_warehouse_product_2
     				amount = manpower_2_product_negative
     				# producer = ROOT
+				}
+				multiply_variable = {
+					var = manpower_2_product
+					value = 10
 				}
 				add_manpower = manpower_2_product
 				set_variable = {
@@ -143,7 +151,8 @@ on_actions = {
     				# producer = ROOT
 				}
 				multiply_variable = {
-					manpower_3_product = 100
+					var = manpower_3_product
+					value = 10
 				}
 				add_manpower = manpower_3_product
 				set_variable = {
